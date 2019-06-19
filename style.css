@@ -1,0 +1,160 @@
+/* Container Setup*/
+body::-webkit-scrollbar{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+ 
+}
+.main-container{
+    background-image: url(Phone.png);
+    background-repeat: no-repeat;
+    width: 320px;
+    margin : 20px auto;
+    max-height: 900px;
+    height: 700px;
+    box-sizing: border-box;
+    background-size: 100%
+}
+.window{
+    position:relative;
+    top:78px;
+    left:20px;
+    height: 495px;
+    width: 280px;
+    overflow: hidden;
+}
+
+
+.container{
+    padding: 10px;
+    height: 500px;
+    overflow: scroll;
+}
+.flight-container{
+
+}
+/* Flight Title */
+.flight-title{
+    font-size: 14px;
+    line-height: 70px;
+    min-height: 70px;
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+
+.flight-title .departure::after{
+    content : "-";
+    font-size : 20px;
+    margin: 0 5px;
+}
+.flight-title .date{
+    margin-left:10px;
+}
+
+/*Flight Item*/
+.flight-item{
+    margin-top: 10px;
+}
+
+.flight-summary{
+    background-color:rgba(246, 248, 249, 0.3);
+    height: 75px;
+    width: 100%;
+    box-shadow: 6px 8px 7px -7px rgba(0,0,0,0.31);
+}
+
+.flight-name{
+    text-align: center;
+    line-height: 70px;
+}
+
+.flight-item.open .packages-container{
+    height: auto;
+    transition: all 0.3s ease;
+    opacity:1;
+}
+
+.packages-container{
+    border:1px solid rgba(0,0,0,0.31);
+    margin-top:5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height:0;
+    opacity: 0;
+}
+.cabin{
+    position: relative;
+}
+.cabin-title{
+    position: absolute;
+    transform: rotate(-90deg);
+    display: inline-block;
+    width: 20%;
+    position:absolute;
+    text-align: center;
+}
+.economy-packages .cabin-title{
+top: 60%
+}
+.business-packages .cabin-title{
+    top: 25%
+    }
+.cabin-title span{
+    font-size:12px;
+    white-space: nowrap
+}
+.economy-packages{
+    background-color:beige;
+}
+.business-packages{
+    background-color:palevioletred;
+}
+.business-packages .cabin-title span{
+    white-space: normal
+}
+
+.cabin-packages{
+    width: 79%;
+    display: inline-block;
+    margin-left:22%;
+
+}
+.package{
+    padding: 5px;
+    min-height: 60px;
+    background-color: ghostwhite;
+    border: 1px solid rgba(0,0,0,0.31)
+}
+.package input{
+    height: 50px;
+    vertical-align: middle;
+}
+.details-part{
+    display: inline-block;
+    min-height: 60px;
+    vertical-align: middle;
+    width:50%;
+}
+.checkbox{
+    display: inline-block;
+}
+
+.package-title{
+    font-weight: 600;
+}
+.packages-detail{
+    margin-top:10px;
+    font-size: 10px;
+}
+.price-part{
+    margin-left:5px;
+    display: inline-block;
+    width:30%;
+    vertical-align: middle;
+}
+.currency{
+    vertical-align: super;
+    font-size:10px;
+}
+.amount{
+    font-size: 20px;
+    font-weight: 700;
+}
