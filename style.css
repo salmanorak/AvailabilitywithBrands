@@ -18,7 +18,7 @@ body::-webkit-scrollbar{
     position:relative;
     top:80px;
     left:20px;
-    height: 495px;
+    height: 490px;
     width: 280px;
     overflow: hidden;
 }
