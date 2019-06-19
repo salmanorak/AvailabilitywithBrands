@@ -14,7 +14,7 @@ flights[i].addEventListener('click', function(e){
             document.querySelectorAll('.open')[0].classList.remove('open')
         }
         e.currentTarget.parentElement.classList.add('open')
-        e.currentTarget.scrollIntoView({behavior: "smooth"});
+        e.currentTarget.scrollIntoView(true,{behavior: "smooth"});
 
     }
 })
