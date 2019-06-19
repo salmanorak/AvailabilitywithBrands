@@ -16,7 +16,7 @@ body::-webkit-scrollbar{
 }
 .window{
     position:relative;
-    top:78px;
+    top:80px;
     left:20px;
     height: 495px;
     width: 280px;
@@ -59,6 +59,12 @@ body::-webkit-scrollbar{
     height: 75px;
     width: 100%;
     box-shadow: 6px 8px 7px -7px rgba(0,0,0,0.31);
+}
+.flight-item.open .flight-summary{
+    box-shadow: none
+}
+.flight-item.open {
+    border: 2px solid rgba(0,0,0,0.1) 
 }
 
 .flight-name{
